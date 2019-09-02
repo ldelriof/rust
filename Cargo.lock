@@ -5,9 +5,14 @@ name = "ch3"
 version = "0.1.0"
 
 [[package]]
+name = "ch8"
+version = "0.1.0"
+
+[[package]]
 name = "exercises"
 version = "0.1.0"
 dependencies = [
  "ch3 0.1.0",
+ "ch8 0.1.0",
 ]
 
