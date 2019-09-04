@@ -13,10 +13,10 @@ fn main() {
 
     let mut num_list = vec![3, 8, 5, 7, 2, 35, 2, 6, 2, 8, 9];
 
-    ch8::stats(&mut num_list);
+    ch8::stats::calc(&mut num_list);
 
     let mut phrase = "hello you apple".to_string();
-    let pl = ch8::pig_latin(&mut phrase);
+    let pl = ch8::pig_latin::phrase(&mut phrase);
     println!("{}", pl);
 
     let mut departments = HashMap::new();
@@ -28,7 +28,7 @@ fn main() {
             .expect("Failed to read line");
 
         if command.len() > 1 {
-            ch8::parse_command(&command, &mut departments);
+            ch8::company::parse_command(&command, &mut departments);
         }
     }
 }
